@@ -1,6 +1,6 @@
 #!/bin/sh
-#docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS docker.io
-docker login -u "valerians777" -p "Valerian301331" docker.io
+docker login -u $DOCKER_USER -p $DOCKER_PASS docker.io
+#docker login -u "valerians777" -p "Valerian301331" docker.io
 
 if [ "$TRAVIS_BRANCH" = "master" ]; then
     TAG="latest"
